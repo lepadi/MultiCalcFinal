@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Geom">
+
+    <LinearLayout
+        android:id="@+id/Kt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:visibility="invisible">
+
+        <EditText
+            android:id="@+id/Kt1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Введите катет"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/Kt2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Введите катет"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/KtCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Расчитать"
+            android:onClick="KtCount"/>
+
+        <TextView
+            android:id="@+id/tXt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Результат" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="KtPu"
+            android:text="Катет прямоугольного треугольника" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="GpPu"
+            android:text="Гипотенуза прямоугольного треугольника" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".Alg">
+
+    <TextView
+        android:id="@+id/selectTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите, что вам нужно"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/Ll2"
+        android:layout_width="414dp"
+        android:layout_height="686dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectTxt"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible">
+
+        <Button
+            android:id="@+id/ax2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="ax2"
+            android:text="ax^2+bx+c=0" />
+
+        <Button
+            android:id="@+id/ax4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="ax^4+bx^2+c=0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible">
+
+        <EditText
+            android:id="@+id/textA"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Введите число a"
+            android:inputType="number"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/textB"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Введите число b"
+            android:inputType="number"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/textC"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Введите число с"
+            android:inputType="number"
+            android:text="" />
+
+        <Button
+            android:id="@+id/ax2Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ax2Count"
+            android:text="Расчитать x" />
+
+        <TextView
+            android:id="@+id/x1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:text="TextView"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/x2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="TextView"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
